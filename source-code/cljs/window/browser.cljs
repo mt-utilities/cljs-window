@@ -1,5 +1,11 @@
 
-(ns window.navigator)
+(ns window.browser)
+
+; A window.browser névtér eredetileg window.navigator névtér lett volna
+;
+; Error: Namespace "window.navigator" already declared.
+; at Object.goog.provide
+; at ...
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

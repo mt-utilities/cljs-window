@@ -1,6 +1,12 @@
 
-(ns window.location
+(ns window.uri
     (:require [mid-fruits.uri :as uri]))
+
+; A window.uri névtér eredetileg window.location névtér lett volna
+;
+; Error: Namespace "window.location" already declared.
+; at Object.goog.provide
+; at ...
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -31,3 +37,4 @@
   (let [protocol (get-protocol)
         hostname (get-hostname)]
        (str protocol "//" hostname)))
+       
