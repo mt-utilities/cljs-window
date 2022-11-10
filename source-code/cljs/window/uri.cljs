@@ -37,4 +37,3 @@
   (let [protocol (get-protocol)
         hostname (get-hostname)]
        (str protocol "//" hostname)))
-       
