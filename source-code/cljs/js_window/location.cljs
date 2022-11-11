@@ -1,12 +1,7 @@
 
-(ns window.uri
+(ns js-window.location
     (:require [mid-fruits.uri :as uri]))
 
-; A window.uri névtér eredetileg window.location névtér lett volna
-;
-; Error: Namespace "window.location" already declared.
-; at Object.goog.provide
-; at ...
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------

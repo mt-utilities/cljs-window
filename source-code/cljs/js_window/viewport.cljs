@@ -1,5 +1,5 @@
 
-(ns window.viewport
+(ns js-window.viewport
     (:require [mid-fruits.candy :refer [return]]))
 
 ;; ----------------------------------------------------------------------------

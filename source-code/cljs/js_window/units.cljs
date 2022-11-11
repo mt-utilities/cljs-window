@@ -1,5 +1,5 @@
 
-(ns window.units
+(ns js-window.units
     (:require [math.api :as math]))
 
 ;; ----------------------------------------------------------------------------

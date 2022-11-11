@@ -1,47 +1,47 @@
 
-(ns window.api
-    (:require [window.browser  :as browser]
-              [window.go       :as go]
-              [window.tab      :as tab]
-              [window.touch    :as touch]
-              [window.units    :as units]
-              [window.uri      :as uri]
-              [window.viewport :as viewport]))
+(ns js-window.api
+    (:require [js-window.go        :as go]
+              [js-window.location  :as location]
+              [js-window.navigator :as navigator]
+              [js-window.tab       :as tab]
+              [js-window.touch     :as touch]
+              [js-window.units     :as units]
+              [js-window.viewport  :as viewport]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; window.browser
-(def get-user-agent   browser/get-user-agent)
-(def get-language     browser/get-language)
-(def browser-online?  browser/browser-online?)
-(def browser-offline? browser/browser-offline?)
-
-; window.go
+; js-window.go
 (def go-root! go/go-root!)
 (def go-back! go/go-back!)
 (def go-to!   go/go-to!)
 
-; window.tab
+; js-window.location
+(def get-uri      location/get-uri)
+(def get-protocol location/get-protocol)
+(def get-hostname location/get-hostname)
+(def get-uri-base location/get-uri-base)
+
+; js-window.navigator
+(def get-user-agent   navigator/get-user-agent)
+(def get-language     navigator/get-language)
+(def browser-online?  navigator/browser-online?)
+(def browser-offline? navigator/browser-offline?)
+
+; js-window.tab
 (def open-tab!   tab/open-tab!)
 (def reload-tab! tab/reload-tab!)
 
-; window.touch
+; js-window.touch
 (def touch-events-api-detected? touch/touch-events-api-detected?)
 
-; window.units
+; js-window.units
 (def px->vh units/px->vh)
 (def px->vw units/px->vw)
 (def vh->px units/vh->px)
 (def vw->px units/vw->px)
 
-; window.uri
-(def get-uri      uri/get-uri)
-(def get-protocol uri/get-protocol)
-(def get-hostname uri/get-hostname)
-(def get-uri-base uri/get-uri-base)
-
-; window.viewport
+; js-window.viewport
 (def get-viewport-height      viewport/get-viewport-height)
 (def get-viewport-width       viewport/get-viewport-width)
 (def get-viewport-orientation viewport/get-viewport-orientation)
