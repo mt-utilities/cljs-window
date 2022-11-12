@@ -21,6 +21,7 @@
 (def get-protocol location/get-protocol)
 (def get-hostname location/get-hostname)
 (def get-uri-base location/get-uri-base)
+(def get-uri-path location/get-uri-path)
 
 ; js-window.navigator
 (def get-user-agent   navigator/get-user-agent)

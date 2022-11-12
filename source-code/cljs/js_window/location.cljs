@@ -1,7 +1,6 @@
 
 (ns js-window.location
-    (:require [mid-fruits.uri :as uri]))
-
+    (:require [mid-fruits.string :as string]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -32,3 +31,19 @@
   (let [protocol (get-protocol)
         hostname (get-hostname)]
        (str protocol "//" hostname)))
+
+(defn get-uri-path
+  ; @example
+  ;  (get-uri-path)
+  ;  =>
+  ;  "/my-path"
+  ;
+  ; @return (string)
+  []
+  (let [hostname (get-hostname)]
+       (-> (get-uri)
+           (string/after-first-occurence  hostname)
+           (string/after-first-occurence  "/" {:return? false})
+           (string/before-first-occurence "?" {:return? true})
+           (string/before-first-occurence "#" {:return? true})
+           (string/starts-with!           "/"))))
