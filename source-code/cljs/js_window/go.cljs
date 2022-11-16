@@ -6,13 +6,13 @@
 
 (defn go-root!
   ; @usage
-  ;  (go-root!)
+  ; (go-root!)
   [_]
   (set! (-> js/window .-location .-href) "/"))
 
 (defn go-back!
   ; @usage
-  ;  (go-back!)
+  ; (go-back!)
   [_]
   (-> js/window .-history .back))
 
@@ -20,6 +20,6 @@
   ; @param (string) uri
   ;
   ; @usage
-  ;  (go-to! "www.my-site.com/my-link")
+  ; (go-to! "www.my-site.com/my-link")
   [uri]
   (set! (-> js/window .-location .-href) uri))

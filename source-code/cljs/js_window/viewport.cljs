@@ -7,7 +7,7 @@
 
 (defn get-viewport-height
   ; @usage
-  ;  (get-viewport-height)
+  ; (get-viewport-height)
   ;
   ; @return (px)
   []
@@ -15,7 +15,7 @@
 
 (defn get-viewport-width
   ; @usage
-  ;  (get-viewport-width)
+  ; (get-viewport-width)
   ;
   ; @return (px)
   []
@@ -26,10 +26,10 @@
 
 (defn get-viewport-orientation
   ; @usage
-  ;  (get-viewport-orientation)
+  ; (get-viewport-orientation)
   ;
   ; @return (keyword)
-  ;  :landscape, :portrait
+  ; :landscape, :portrait
   []
   (if (> (.-innerHeight js/window)
          (.-innerWidth  js/window))
@@ -41,7 +41,7 @@
 
 (defn square-viewport?
   ; @usage
-  ;  (square-viewport?)
+  ; (square-viewport?)
   ;
   ; @return (boolean)
   []
@@ -50,7 +50,7 @@
 
 (defn landscape-viewport?
   ; @usage
-  ;  (landscape-viewport?)
+  ; (landscape-viewport?)
   ;
   ; @return (boolean)
   []
@@ -59,7 +59,7 @@
 
 (defn portrait-viewport?
   ; @usage
-  ;  (portrait-viewport?)
+  ; (portrait-viewport?)
   ;
   ; @return (boolean)
   []

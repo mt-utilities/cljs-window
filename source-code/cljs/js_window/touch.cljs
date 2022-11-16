@@ -6,7 +6,7 @@
 
 (defn touch-events-api-detected?
   ; @usage
-  ;  (touch-events-api-detected?)
+  ; (touch-events-api-detected?)
   ;
   ; @return (boolean)
   []

@@ -6,25 +6,34 @@
 ;; ----------------------------------------------------------------------------
 
 (defn get-uri
+  ; @usage
+  ; (get-uri)
+  ;
   ; @return (string)
   []
   (-> js/window .-location .-href))
 
 (defn get-protocol
+  ; @usage
+  ; (get-protocol)
+  ;
   ; @return (string)
   []
   (-> js/window .-location .-protocol))
 
 (defn get-hostname
+  ; @usage
+  ; (get-hostname)
+  ;
   ; @return (string)
   []
   (-> js/window .-location .-hostname))
 
 (defn get-uri-base
   ; @example
-  ;  (get-uri-base)
-  ;  =>
-  ;  "https://my-domain.com"
+  ; (get-uri-base)
+  ; =>
+  ; "https://my-domain.com"
   ;
   ; @return (string)
   []
@@ -34,9 +43,9 @@
 
 (defn get-uri-path
   ; @example
-  ;  (get-uri-path)
-  ;  =>
-  ;  "/my-path"
+  ; (get-uri-path)
+  ; =>
+  ; "/my-path"
   ;
   ; @return (string)
   []

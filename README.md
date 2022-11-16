@@ -1,5 +1,11 @@
 
 # window-api
 
-# Documentation book is releasing soon ...
-  2023.01.01.
+### Overview
+...
+
+### Current version
+The <strong>window-api</strong> is releasing soon on Clojars!
+
+### Documentation
+The <strong>window-api</strong> documentation is [available here](documentation/COVER.md).
