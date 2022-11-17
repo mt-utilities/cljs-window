@@ -387,6 +387,7 @@
 
 ```
 @return (keyword)
+:landscape, :portrait
 ```
 
 <details>
