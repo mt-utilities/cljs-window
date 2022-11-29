@@ -830,7 +830,6 @@
 ```
 (defn touch-events-api-detected?
   []
-  false
   (boolean (or (.hasOwnProperty js/window "ontouchstart")
                (-> js/window .-navigator .-maxTouchPoints   (> 0))
                (-> js/window .-navigator .-msMaxTouchPoints (> 0))
