@@ -1,10 +1,7 @@
 
 # <strong>js-window.api</strong> namespace
-<p>Documentation of the <strong>js_window/api.cljs</strong> file</p>
 
-<strong>[README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > js-window.api</strong>
-
-
+<strong>[README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > </strong>source-code/cljs/js_window/api.cljs
 
 ### browser-offline?
 
@@ -32,9 +29,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [browser-offline?]]))
+(ns my-namespace (:require [js-window.api :refer [browser-offline?]]))
 
-(js-window/browser-offline?)
+(js-window.api/browser-offline?)
 (browser-offline?)
 ```
 
@@ -68,9 +65,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [browser-online?]]))
+(ns my-namespace (:require [js-window.api :refer [browser-online?]]))
 
-(js-window/browser-online?)
+(js-window.api/browser-online?)
 (browser-online?)
 ```
 
@@ -104,9 +101,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-hostname]]))
+(ns my-namespace (:require [js-window.api :refer [get-hostname]]))
 
-(js-window/get-hostname)
+(js-window.api/get-hostname)
 (get-hostname)
 ```
 
@@ -140,9 +137,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-language]]))
+(ns my-namespace (:require [js-window.api :refer [get-language]]))
 
-(js-window/get-language)
+(js-window.api/get-language)
 (get-language)
 ```
 
@@ -176,9 +173,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-protocol]]))
+(ns my-namespace (:require [js-window.api :refer [get-protocol]]))
 
-(js-window/get-protocol)
+(js-window.api/get-protocol)
 (get-protocol)
 ```
 
@@ -212,9 +209,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-uri]]))
+(ns my-namespace (:require [js-window.api :refer [get-uri]]))
 
-(js-window/get-uri)
+(js-window.api/get-uri)
 (get-uri)
 ```
 
@@ -252,9 +249,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-uri-base]]))
+(ns my-namespace (:require [js-window.api :refer [get-uri-base]]))
 
-(js-window/get-uri-base)
+(js-window.api/get-uri-base)
 (get-uri-base)
 ```
 
@@ -296,9 +293,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-uri-path]]))
+(ns my-namespace (:require [js-window.api :refer [get-uri-path]]))
 
-(js-window/get-uri-path)
+(js-window.api/get-uri-path)
 (get-uri-path)
 ```
 
@@ -332,9 +329,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-user-agent]]))
+(ns my-namespace (:require [js-window.api :refer [get-user-agent]]))
 
-(js-window/get-user-agent)
+(js-window.api/get-user-agent)
 (get-user-agent)
 ```
 
@@ -368,9 +365,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-viewport-height]]))
+(ns my-namespace (:require [js-window.api :refer [get-viewport-height]]))
 
-(js-window/get-viewport-height)
+(js-window.api/get-viewport-height)
 (get-viewport-height)
 ```
 
@@ -408,9 +405,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-viewport-orientation]]))
+(ns my-namespace (:require [js-window.api :refer [get-viewport-orientation]]))
 
-(js-window/get-viewport-orientation)
+(js-window.api/get-viewport-orientation)
 (get-viewport-orientation)
 ```
 
@@ -444,9 +441,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [get-viewport-width]]))
+(ns my-namespace (:require [js-window.api :refer [get-viewport-width]]))
 
-(js-window/get-viewport-width)
+(js-window.api/get-viewport-width)
 (get-viewport-width)
 ```
 
@@ -476,9 +473,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [go-back!]]))
+(ns my-namespace (:require [js-window.api :refer [go-back!]]))
 
-(js-window/go-back!)
+(js-window.api/go-back!)
 (go-back!)
 ```
 
@@ -508,9 +505,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [go-root!]]))
+(ns my-namespace (:require [js-window.api :refer [go-root!]]))
 
-(js-window/go-root!)
+(js-window.api/go-root!)
 (go-root!)
 ```
 
@@ -544,10 +541,10 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [go-to!]]))
+(ns my-namespace (:require [js-window.api :refer [go-to!]]))
 
-(js-window/go-to! ...)
-(go-to!           ...)
+(js-window.api/go-to! ...)
+(go-to!               ...)
 ```
 
 </details>
@@ -581,9 +578,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [landscape-viewport?]]))
+(ns my-namespace (:require [js-window.api :refer [landscape-viewport?]]))
 
-(js-window/landscape-viewport?)
+(js-window.api/landscape-viewport?)
 (landscape-viewport?)
 ```
 
@@ -617,10 +614,10 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [open-tab!]]))
+(ns my-namespace (:require [js-window.api :refer [open-tab!]]))
 
-(js-window/open-tab! ...)
-(open-tab!           ...)
+(js-window.api/open-tab! ...)
+(open-tab!               ...)
 ```
 
 </details>
@@ -654,9 +651,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [portrait-viewport?]]))
+(ns my-namespace (:require [js-window.api :refer [portrait-viewport?]]))
 
-(js-window/portrait-viewport?)
+(js-window.api/portrait-viewport?)
 (portrait-viewport?)
 ```
 
@@ -694,10 +691,10 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [px->vh]]))
+(ns my-namespace (:require [js-window.api :refer [px->vh]]))
 
-(js-window/px->vh ...)
-(px->vh           ...)
+(js-window.api/px->vh ...)
+(px->vh               ...)
 ```
 
 </details>
@@ -734,10 +731,10 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [px->vw]]))
+(ns my-namespace (:require [js-window.api :refer [px->vw]]))
 
-(js-window/px->vw ...)
-(px->vw           ...)
+(js-window.api/px->vw ...)
+(px->vw               ...)
 ```
 
 </details>
@@ -766,9 +763,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [reload-tab!]]))
+(ns my-namespace (:require [js-window.api :refer [reload-tab!]]))
 
-(js-window/reload-tab!)
+(js-window.api/reload-tab!)
 (reload-tab!)
 ```
 
@@ -803,9 +800,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [square-viewport?]]))
+(ns my-namespace (:require [js-window.api :refer [square-viewport?]]))
 
-(js-window/square-viewport?)
+(js-window.api/square-viewport?)
 (square-viewport?)
 ```
 
@@ -843,9 +840,9 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [touch-events-api-detected?]]))
+(ns my-namespace (:require [js-window.api :refer [touch-events-api-detected?]]))
 
-(js-window/touch-events-api-detected?)
+(js-window.api/touch-events-api-detected?)
 (touch-events-api-detected?)
 ```
 
@@ -883,10 +880,10 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [vh->px]]))
+(ns my-namespace (:require [js-window.api :refer [vh->px]]))
 
-(js-window/vh->px ...)
-(vh->px           ...)
+(js-window.api/vh->px ...)
+(vh->px               ...)
 ```
 
 </details>
@@ -923,10 +920,10 @@
 <summary>Require</summary>
 
 ```
-(ns my-namespace (:require [js-window.api :as js-window :refer [vw->px]]))
+(ns my-namespace (:require [js-window.api :refer [vw->px]]))
 
-(js-window/vw->px ...)
-(vw->px           ...)
+(js-window.api/vw->px ...)
+(vw->px               ...)
 ```
 
 </details>

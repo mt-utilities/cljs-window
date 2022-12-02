@@ -5,7 +5,9 @@
 
 ### Overview
 
-...
+The <strong>window-api</strong> is a set of ClojureScript utility functions
+which helps you to use the JavaScript/Window object's functionality in an easy
+and standardized way.
 
 ### deps.edn
 
