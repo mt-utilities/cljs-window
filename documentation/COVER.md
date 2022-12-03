@@ -1,11 +1,11 @@
 
 # <strong>window-api</strong>
 
-<p>Documentation of the <strong>window-api</strong> Clojure / ClojureScript library</p>
+<p>Documentation of the <strong>window-api</strong> ClojureScript library</p>
 
 <strong>[README](../README.md) > DOCUMENTATION</strong>
 
-### Public namespaces
+### ClojureScript namespaces
 
 * [js-window.api](cljs/js-window/API.md) [cljs]
 

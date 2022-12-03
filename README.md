@@ -22,7 +22,7 @@ Check out the latest commit on the [release branch](https://github.com/bithandsh
 
 ### Documentation
 
-The <strong>window-api</strong> documentation is [available here](documentation/COVER.md).
+The <strong>window-api</strong> functional documentation is [available here](documentation/COVER.md).
 
 ### Changelog
 
