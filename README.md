@@ -1,8 +1,6 @@
 
 # window-api
 
-...
-
 ### Overview
 
 The <strong>window-api</strong> is a set of ClojureScript utility functions
