@@ -1,8 +1,7 @@
 
-
 # window-api documentation
 
-Documentation of the [window-api](https://github.com/bithandshake-hq/window-api) ClojureScript library
+Documentation of the [window-api](https://github.com/bithandshake/window-api) ClojureScript library
 
 ##### [README](../README.md) > DOCUMENTATION
 
