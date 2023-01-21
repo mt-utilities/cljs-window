@@ -1,11 +1,15 @@
 
-(ns js-window.units
+(ns window.dimensions.units
     (:require [math.api :as math]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
 (defn px->vh
+  ; @description
+  ; Translate the given pixel value into actual VH value by using the viewport
+  ; height read from the JS Window object.
+  ;
   ; @param (px) n
   ;
   ; @usage
@@ -16,6 +20,10 @@
   (-> n (/ (-> js/window .-innerHeight (/ 100))) math/floor))
 
 (defn px->vw
+  ; @description
+  ; Translate the given pixel value into actual VW value by using the viewport
+  ; width read from the JS Window object.
+  ;
   ; @param (px) n
   ;
   ; @usage
@@ -26,6 +34,10 @@
   (-> n (/ (-> js/window .-innerWidth (/ 100))) math/floor))
 
 (defn vh->px
+  ; @description
+  ; Translate the given VH value into actual pixel value by using the viewport
+  ; height read from the JS Window object.
+  ;
   ; @param (vh) n
   ;
   ; @usage
@@ -36,6 +48,10 @@
   (-> n (* (-> js/window .-innerHeight (/ 100))) math/floor))
 
 (defn vw->px
+  ; @description
+  ; Translate the given VH value into actual pixel value by using the viewport
+  ; width read from the JS Window object.
+  ;
   ; @param (vw) n
   ;
   ; @usage
