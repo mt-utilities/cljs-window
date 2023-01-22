@@ -1,13 +1,13 @@
 
-# window-api documentation
+# cljs-window documentation
 
-Documentation of the [window-api](https://github.com/bithandshake/window-api) ClojureScript library
+Documentation of the [cljs-window](https://github.com/bithandshake/cljs-window) ClojureScript library
 
 ##### [README](../README.md) > DOCUMENTATION
 
 ### ClojureScript namespaces
 
-* [js-window.api](cljs/js-window/API.md)
+* [window.api](cljs/window/API.md)
 
 ---
 

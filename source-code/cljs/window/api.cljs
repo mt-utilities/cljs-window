@@ -15,7 +15,7 @@
 ; window.dimensions.helpers
 (def viewport-height dimensions.helpers/viewport-height)
 (def viewport-width  dimensions.helpers/viewport-width)
-(def viewport-shape  dimensions.helpers/viewport-shape)
+(def viewport-shape  dimensions.helpers/viewport-shape) 
 
 ; window.dimensions.units
 (def px->vh dimensions.units/px->vh)
