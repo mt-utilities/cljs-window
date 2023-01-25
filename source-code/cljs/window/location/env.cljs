@@ -1,5 +1,5 @@
 
-(ns window.location.helpers
+(ns window.location.env
     (:require [string.api :as string]))
 
 ;; ----------------------------------------------------------------------------
