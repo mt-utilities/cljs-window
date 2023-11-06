@@ -1,5 +1,9 @@
 
-# window.api ClojureScript namespace
+### window.api
+
+Functional documentation of the window.api ClojureScript namespace
+
+---
 
 ##### [README](../../../README.md) > [DOCUMENTATION](../../COVER.md) > window.api
 
@@ -60,6 +64,8 @@
 - [viewport-width](#viewport-width)
 
 - [vw->px](#vw-px)
+
+---
 
 ### abort-timeout!
 
@@ -1265,5 +1271,5 @@ width read from the JS Window object.
 
 ---
 
-This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.
+<sub>This documentation is generated with the [clj-docs-generator](https://github.com/bithandshake/clj-docs-generator) engine.</sub>
 
