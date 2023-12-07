@@ -12,45 +12,45 @@
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
-; window.dimensions.env
+; @redirect (window.dimensions.env)
 (def viewport-height dimensions.env/viewport-height)
 (def viewport-width  dimensions.env/viewport-width)
 (def viewport-shape  dimensions.env/viewport-shape)
 
-; window.dimensions.units
+; @redirect (window.dimensions.units)
 (def px->vh dimensions.units/px->vh)
 (def px->vw dimensions.units/px->vw)
 (def vh->px dimensions.units/vh->px)
 (def vw->px dimensions.units/vw->px)
 
-; window.events.side-effects
+; @redirect (window.events.side-effects)
 (def add-event-listener!    events.side-effects/add-event-listener!)
 (def remove-event-listener! events.side-effects/remove-event-listener!)
 
-; window.history.side-effects
+; @redirect (window.history.side-effects)
 (def go-back! history.side-effects/go-back!)
 
-; window.location.env
+; @redirect (window.location.env)
 (def uri      location.env/uri)
 (def protocol location.env/protocol)
 (def hostname location.env/hostname)
 (def uri-base location.env/uri-base)
 (def uri-path location.env/uri-path)
 
-; window.location.side-effects
+; @redirect (window.location.side-effects)
 (def go-root!    location.side-effects/go-root!)
 (def go-to!      location.side-effects/go-to!)
 (def open-tab!   location.side-effects/open-tab!)
 (def reload-tab! location.side-effects/reload-tab!)
 
-; window.navigator.env
+; @redirect (window.navigator.env)
 (def user-agent                 navigator.env/user-agent)
 (def language                   navigator.env/language)
 (def browser-online?            navigator.env/browser-online?)
 (def browser-offline?           navigator.env/browser-offline?)
 (def touch-events-api-detected? navigator.env/touch-events-api-detected?)
 
-; window.schedule.side-effects
+; @redirect (window.schedule.side-effects)
 (def set-interval!   schedule.side-effects/set-interval!)
 (def clear-interval! schedule.side-effects/clear-interval!)
 (def set-timeout!    schedule.side-effects/set-timeout!)
