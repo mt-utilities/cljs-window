@@ -7,8 +7,8 @@
 
 (defn px->vh
   ; @description
-  ; Translate the given pixel value into actual VH value by using the viewport
-  ; height read from the JS Window object.
+  ; Converts the given pixel value into actual VH value by using the viewport
+  ; height (from the JS Window object).
   ;
   ; @param (px) n
   ;
@@ -21,8 +21,8 @@
 
 (defn px->vw
   ; @description
-  ; Translate the given pixel value into actual VW value by using the viewport
-  ; width read from the JS Window object.
+  ; Converts the given pixel value into actual VW value by using the viewport
+  ; width (from the JS Window object).
   ;
   ; @param (px) n
   ;
@@ -35,8 +35,8 @@
 
 (defn vh->px
   ; @description
-  ; Translate the given VH value into actual pixel value by using the viewport
-  ; height read from the JS Window object.
+  ; Converts the given VH value into actual pixel value by using the viewport
+  ; height (from the JS Window object).
   ;
   ; @param (vh) n
   ;
@@ -49,8 +49,8 @@
 
 (defn vw->px
   ; @description
-  ; Translate the given VH value into actual pixel value by using the viewport
-  ; width read from the JS Window object.
+  ; Converts the given VH value into actual pixel value by using the viewport
+  ; width (from the JS Window object).
   ;
   ; @param (vw) n
   ;

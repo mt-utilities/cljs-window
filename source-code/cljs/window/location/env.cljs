@@ -7,7 +7,7 @@
 
 (defn uri
   ; @description
-  ; Returns the actual URI read from the JS Window object.
+  ; Returns the actual URI (from the JS Window object).
   ;
   ; @usage
   ; (uri)
@@ -18,7 +18,7 @@
 
 (defn protocol
   ; @description
-  ; Returns the actual protocol read from the JS Window object.
+  ; Returns the actual protocol (from the JS Window object).
   ;
   ; @usage
   ; (protocol)
@@ -29,7 +29,7 @@
 
 (defn hostname
   ; @description
-  ; Returns the actual hostname read from the JS Window object.
+  ; Returns the actual hostname (from the JS Window object).
   ;
   ; @usage
   ; (hostname)
@@ -40,7 +40,7 @@
 
 (defn uri-base
   ; @description
-  ; Returns the actual URI base (protocol and hostname) read from the JS Window object.
+  ; Returns the actual URI base (protocol and hostname) (from the JS Window object).
   ;
   ; @example
   ; (uri-base)
@@ -53,7 +53,7 @@
 
 (defn uri-path
   ; @description
-  ; Returns the actual URI path read from the JS Window object.
+  ; Returns the actual URI path (from the JS Window object).
   ;
   ; @example
   ; (uri-path)

@@ -6,7 +6,7 @@
 
 (defn viewport-height
   ; @description
-  ; Returns the actual viewport height read from the JS Window object.
+  ; Returns the actual viewport height (from the JS Window object).
   ;
   ; @usage
   ; (viewport-height)
@@ -17,7 +17,7 @@
 
 (defn viewport-width
   ; @description
-  ; Returns the actual viewport width read from the JS Window object.
+  ; Returns the actual viewport width (from the JS Window object).
   ;
   ; @usage
   ; (viewport-width)
@@ -31,8 +31,8 @@
 
 (defn viewport-shape
   ; @description
-  ; Returns the actual viewport shape determined by using viewport dimensions
-  ; read from the JS Window object.
+  ; Returns the actual viewport shape, determined by using viewport dimensions
+  ; (from the JS Window object).
   ;
   ; @usage
   ; (viewport-shape)
@@ -44,4 +44,4 @@
         viewport-width  (.-innerWidth  js/window)]
        (cond (< viewport-height viewport-width) :landscape
              (> viewport-height viewport-width) :portrait
-             :else :square)))
+             :else                              :square)))

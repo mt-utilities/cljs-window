@@ -6,7 +6,7 @@
 
 (defn user-agent
   ; @description
-  ; Returns the actual user agent read from the JS Window object.
+  ; Returns the actual user agent (from the JS Window object).
   ;
   ; @usage
   ; (user-agent)
@@ -18,7 +18,7 @@
 (defn language
   ; @description
   ; Returns the preferred language of the user, usually the language of the
-  ; browser UI read from the JS Window object.
+  ; browser UI (from the JS Window object).
   ;
   ; @usage
   ; (language)
@@ -29,7 +29,7 @@
 
 (defn browser-online?
   ; @description
-  ; Returns true if the browser is connected to the internet read from the JS Window object.
+  ; Returns true if the browser is connected to the internet (from the JS Window object).
   ;
   ; @usage
   ; (browser-online?)
@@ -40,7 +40,7 @@
 
 (defn browser-offline?
   ; @description
-  ; Returns true if the browser is NOT connected to the internet read from the JS Window object.
+  ; Returns true if the browser is NOT connected to the internet (from the JS Window object).
   ;
   ; @usage
   ; (browser-offline?)
