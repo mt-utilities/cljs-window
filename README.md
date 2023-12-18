@@ -11,7 +11,7 @@ and standardized way.
 
 ```
 {:deps {bithandshake/cljs-window {:git/url "https://github.com/bithandshake/cljs-window"
-                                  :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}
+                                  :sha     "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}}}
 ```
 
 ### Current version
