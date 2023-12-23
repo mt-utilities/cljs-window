@@ -3,9 +3,7 @@
 
 ### Overview
 
-The <strong>cljs-window</strong> is a set of ClojureScript utility functions
-which helps you to use the JavaScript Window object's functionality in an easy
-and standardized way.
+The <strong>cljs-window</strong> is a set of JS/Window object utility functions for Clojure projects.
 
 ### deps.edn
 
