@@ -60,6 +60,9 @@
         (swap! schedule.state/TIMEOUTS assoc timeout-id ref))))
 
 (defn abort-timeout!
+  ; @important
+  ; This function is incomplete and may not behave as expected.
+  ;
   ; @description
   ; Aborts a previously set timeout function with the given ID.
   ;
