@@ -44,11 +44,11 @@
 (def reload-tab! location.side-effects/reload-tab!)
 
 ; @redirect (window.navigator.env)
-(def user-agent                 navigator.env/user-agent)
-(def language                   navigator.env/language)
-(def browser-online?            navigator.env/browser-online?)
-(def browser-offline?           navigator.env/browser-offline?)
-(def touch-events-api-detected? navigator.env/touch-events-api-detected?)
+(def user-agent                  navigator.env/user-agent)
+(def language                    navigator.env/language)
+(def browser-online?             navigator.env/browser-online?)
+(def browser-offline?            navigator.env/browser-offline?)
+(def touch-events-api-available? navigator.env/touch-events-api-available?)
 
 ; @redirect (window.schedule.side-effects)
 (def set-interval!   schedule.side-effects/set-interval!)

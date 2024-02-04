@@ -49,13 +49,13 @@
   []
   (-> js/window .-navigator .-onLine not))
 
-(defn touch-events-api-detected?
+(defn touch-events-api-available?
   ; @description
   ; Returns true if the page is using touch pointer device determined by using
   ; the JS Window object.
   ;
   ; @usage
-  ; (touch-events-api-detected?)
+  ; (touch-events-api-available?)
   ;
   ; @return (boolean)
   []
