@@ -67,4 +67,4 @@
       (string/after-first-occurence  "/" {:return? false})
       (string/before-first-occurence "?" {:return? true})
       (string/before-first-occurence "#" {:return? true})
-      (string/starts-with!           "/")))
+      (string/start-with             "/")))
