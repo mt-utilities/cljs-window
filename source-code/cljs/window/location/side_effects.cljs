@@ -6,7 +6,7 @@
 
 (defn go-root!
   ; @description
-  ; Navigates the page to the root path ("/") by using the JS Window object.
+  ; Navigates the page to the root path ("/").
   ;
   ; @usage
   ; (go-root!)
@@ -15,7 +15,7 @@
 
 (defn go-to!
   ; @description
-  ; Navigates the page to the given path or URI by using the JS Window object.
+  ; Navigates the page to the given path or URI.
   ;
   ; @param (string) uri
   ;
@@ -43,7 +43,7 @@
 
 (defn reload-tab!
   ; @description
-  ; Reloads the browser tab by using the JS Window object.
+  ; Reloads the browser tab.
   ;
   ; @usage
   ; (reload-tab!)

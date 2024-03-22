@@ -1,14 +1,13 @@
 
 (ns window.schedule.side-effects
-    (:require [window.schedule.state :as schedule.state]))
+    (:require [common-state.api :as common-state]))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
 (defn set-interval!
   ; @description
-  ; Sets an interval function by using the JS Window object.
-  ; By passing the ID, it can be cancelled with the clear-interval! function.
+  ; Registers an interval function optionally identified by the given ID.
   ;
   ; @param (keyword)(opt) interval-id
   ; @param (function) f
@@ -22,28 +21,27 @@
 
   ([interval-id f interval]
    (let [ref (.setInterval js/window f interval)]
-        (swap! schedule.state/INTERVALS assoc interval-id ref))))
+        (common-state/assoc-state! :window :intervals interval-id ref))))
 
 (defn clear-interval!
   ; @description
-  ; Cancels a previously set interval function with the given ID.
+  ; Removes a previously registered interval function identified by the given ID.
   ;
   ; @param (keyword) interval-id
   ;
   ; @usage
   ; (clear-interval! :my-interval)
   [interval-id]
-  (when-let [ref (interval-id @schedule.state/INTERVALS)]
+  (when-let [ref (common-state/get-state :window :intervals interval-id)]
             (.clearInterval js/window ref)
-            (swap! schedule.state/INTERVALS dissoc interval-id)))
+            (common-state/dissoc-state! :window :intervals interval-id)))
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
 
 (defn set-timeout!
   ; @description
-  ; Sets a delayed function by using the JS Window object.
-  ; By passing the ID, it can be aborted with the abort-timeout! function.
+  ; Registers a delayed function optionally identified by the given ID.
   ;
   ; @param (keyword)(opt) timeout-id
   ; @param (function) f
@@ -57,20 +55,21 @@
 
   ([timeout-id f timeout]
    (let [ref (.setTimeout js/window f timeout)]
-        (swap! schedule.state/TIMEOUTS assoc timeout-id ref))))
+        (common-state/assoc-state! :window :timeouts timeout-id ref))))
 
 (defn abort-timeout!
   ; @important
   ; This function is incomplete and may not behave as expected.
   ;
   ; @description
-  ; Aborts a previously set timeout function with the given ID.
+  ; Removes a previously registered delayed function identified by the given ID.
   ;
   ; @param (keyword) timeout-id
   ;
   ; @usage
   ; (abort-timeout! :my-timeout)
   [timeout-id]
-  (when-let [ref (timeout-id @schedule.state/TIMEOUTS)]
+  (when-let [ref (common-state/get-state :window :timeouts timeout-id)]
             ; TODO
-            (swap! schedule.state/TIMEOUTS dissoc timeout-id)))
+            (swap! schedule.state/TIMEOUTS dissoc timeout-id)
+            (common-state/dissoc-state! :window :timeouts timeout-id)))

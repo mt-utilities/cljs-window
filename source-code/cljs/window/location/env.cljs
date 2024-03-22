@@ -7,10 +7,12 @@
 
 (defn uri
   ; @description
-  ; Returns the actual URI (from the JS Window object).
+  ; Returns the actual URI.
   ;
   ; @usage
   ; (uri)
+  ; =>
+  ; "https://my-domain.com/my-path"
   ;
   ; @return (string)
   []
@@ -18,10 +20,12 @@
 
 (defn protocol
   ; @description
-  ; Returns the actual protocol (from the JS Window object).
+  ; Returns the protocol of the actual URI.
   ;
   ; @usage
   ; (protocol)
+  ; =>
+  ; "https:"
   ;
   ; @return (string)
   []
@@ -29,10 +33,12 @@
 
 (defn hostname
   ; @description
-  ; Returns the actual hostname (from the JS Window object).
+  ; Returns the hostname of the actual URI.
   ;
   ; @usage
   ; (hostname)
+  ; =>
+  ; "my-domain.com"
   ;
   ; @return (string)
   []
@@ -40,7 +46,7 @@
 
 (defn uri-base
   ; @description
-  ; Returns the actual URI base (protocol and hostname) (from the JS Window object).
+  ; Returns the URI base (protocol and hostname) of the actual URI.
   ;
   ; @example
   ; (uri-base)
@@ -53,7 +59,7 @@
 
 (defn uri-path
   ; @description
-  ; Returns the actual URI path (from the JS Window object).
+  ; Returns the path of the actual URI.
   ;
   ; @example
   ; (uri-path)

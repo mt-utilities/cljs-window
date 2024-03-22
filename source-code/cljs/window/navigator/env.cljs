@@ -6,10 +6,12 @@
 
 (defn user-agent
   ; @description
-  ; Returns the actual user agent (from the JS Window object).
+  ; Returns the actual user agent.
   ;
   ; @usage
   ; (user-agent)
+  ; =>
+  ; "Mozilla/x.x (Macintosh; Intel Mac OS X xx_xx_x) AppleWebKit/xxx.xx (KHTML, like Gecko) Chrome/xxx.x.x.x Safari/xxx.xx"
   ;
   ; @return (string)
   []
@@ -17,11 +19,12 @@
 
 (defn language
   ; @description
-  ; Returns the preferred language of the user, usually the language of the
-  ; browser UI (from the JS Window object).
+  ; Returns the preferred language of the user, usually the language of the browser UI.
   ;
   ; @usage
   ; (language)
+  ; =>
+  ; "en-GB"
   ;
   ; @return (string)
   []
@@ -29,10 +32,12 @@
 
 (defn browser-online?
   ; @description
-  ; Returns true if the browser is connected to the internet (from the JS Window object).
+  ; Returns TRUE if the browser is connected to the internet.
   ;
   ; @usage
   ; (browser-online?)
+  ; =>
+  ; true
   ;
   ; @return (boolean)
   []
@@ -40,10 +45,12 @@
 
 (defn browser-offline?
   ; @description
-  ; Returns true if the browser is NOT connected to the internet (from the JS Window object).
+  ; Returns TRUE if the browser is NOT connected to the internet.
   ;
   ; @usage
   ; (browser-offline?)
+  ; =>
+  ; true
   ;
   ; @return (boolean)
   []
@@ -51,11 +58,12 @@
 
 (defn touch-events-api-available?
   ; @description
-  ; Returns true if the page is using touch pointer device determined by using
-  ; the JS Window object.
+  ; Returns TRUE if the page can use touch pointer devices.
   ;
   ; @usage
   ; (touch-events-api-available?)
+  ; =>
+  ; true
   ;
   ; @return (boolean)
   []
