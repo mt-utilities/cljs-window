@@ -71,5 +71,4 @@
   [timeout-id]
   (when-let [ref (common-state/get-state :window :timeouts timeout-id)]
             ; TODO
-            (swap! schedule.state/TIMEOUTS dissoc timeout-id)
             (common-state/dissoc-state! :window :timeouts timeout-id)))
