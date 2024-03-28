@@ -1,5 +1,5 @@
 
-(ns window.dimensions.units
+(ns window-a.abc.units
     (:require [fruits.math.api :as math]))
 
 ;; ----------------------------------------------------------------------------

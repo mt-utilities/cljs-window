@@ -1,5 +1,5 @@
 
-(ns window.schedule.side-effects
+(ns window-a.schedule.side-effects
     (:require [common-state.api :as common-state]))
 
 ;; ----------------------------------------------------------------------------

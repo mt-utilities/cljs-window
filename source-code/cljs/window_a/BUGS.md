@@ -1,7 +1,7 @@
 
 # BUG#0081
 
-Compiling with Shadow-CLJS including advanced optimization, naming namespaces as 'window.*' should be avoided!
+Compiling with Shadow-CLJS (release function) including advanced optimization, naming namespaces as 'window.*' should be avoided!
 
 In compiled JS files the following error might occur:
 - Uncaught Error: addEventListener and attachEvent are unavailable.

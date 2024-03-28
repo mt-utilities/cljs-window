@@ -1,5 +1,5 @@
 
-(ns window.location.env
+(ns window-a.location.env
     (:require [fruits.string.api :as string]))
 
 ;; ----------------------------------------------------------------------------

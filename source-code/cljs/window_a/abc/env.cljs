@@ -1,5 +1,5 @@
 
-(ns window.dimensions.env)
+(ns window-a.abc.env)
 
 ;; ----------------------------------------------------------------------------
 ;; ----------------------------------------------------------------------------
@@ -9,7 +9,7 @@
   ; Returns the actual viewport height.
   ;
   ; @usage
-  ; (viewport-height) 
+  ; (viewport-height)
   ; =>
   ; 420
   ;
