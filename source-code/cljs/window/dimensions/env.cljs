@@ -9,7 +9,7 @@
   ; Returns the actual viewport height.
   ;
   ; @usage
-  ; (viewport-height)
+  ; (viewport-height) 
   ; =>
   ; 420
   ;
